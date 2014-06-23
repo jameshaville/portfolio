@@ -1,0 +1,12 @@
+<div class="title-container">
+  <div class="title">
+  Tutorials
+  </div>
+  <div class="sub-title">
+  Latest
+  </div>
+</div>
+<section ng-controller="TutorialsController" style="text-align:center;">
+<div class="item" ng-bind-html="tutorial.body" ng-repeat="tutorial in tutorials">
+</div>
+</section>

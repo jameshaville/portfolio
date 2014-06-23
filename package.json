@@ -1,0 +1,13 @@
+{
+  "name": "jameshaville",
+  "description": "james haville portfolio & tutorial website",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "4.x",
+    "mongoose": "latest",
+    "body-parser": "latest",
+    "serve-favicon": "latest",
+    "gridfs-stream": "latest"
+  }
+}

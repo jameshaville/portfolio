@@ -1,0 +1,25 @@
+<div class="title-container">
+  <div class="title">
+  Portfolio
+  </div>
+</div>
+  <ul ng-controller="PortfolioController" style="list-style:none; margin-top:40px;">
+    <li ng-repeat="project in projects" style="margin-bottom:40px;"> 
+      <div class="row" style="margin-left:10px;margin-right:10px;">
+        <div class="col-md-3" style="text-align:center;padding:15px; border:1px solid #fff;">
+          <img style="max-width:220px;height:110px;" src="{{project.images[0]}}"/>
+        </div>
+        <div class="col-md-9">
+          <span class="project-title">{{project.title}}</span>
+          <span class="project-body">{{project.body}}</span>
+          <ul style="list-style:none;margin-top:10px;margin-bottom:10px;">
+            <li ng-repeat="tag in project.tags" style="display:inline;margin:4px;">
+              <div class="tag">{{tag}}</div>
+            </li>
+          </ul>
+          <span class="project-url" style="font-size:18px;"><a ng-href="{{project.url}}">{{project.url}}</a></span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>

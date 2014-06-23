@@ -9,7 +9,9 @@ require("fs").readdirSync("./models").forEach(function(file) {
 var tutorials = require('./routes/tutorials.js');
 var projects = require('./routes/projects.js');
 
-mongoose.connect('mongodb://localhost/mean-test');
+var mongodb = 'mongodb://admin:password123@kahana.mongohq.com:10091/app26694833'
+
+mongoose.connect(mongodb);
 
 var app = express();
 
